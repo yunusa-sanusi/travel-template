@@ -1,0 +1,36 @@
+h1,h2,h3,h4,h5,h6{ font-family: 'Oswald','Raleway',"Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+
+"Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif
+
+"Merriweather", "Georgia", Times New Roman, Times, serif;
+
+"Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
+
+Some Colors
+-----------
+.bg-primary {
+  background: #91a05c !important;
+}
+.bg-secondary {
+  background: #f8f8f8;
+}
+.bg-white {
+  background: #fff;
+}
+.bg-dark {
+  background: #292929;
+}
+.color-body {
+  color: #666;
+}
+.color-primary {
+  color: #91a05c !important;
+}
+.color-red {
+  color: #e31d3b !important;
+}
+.color-white {
+  color: #fff;
+}

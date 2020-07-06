@@ -1,0 +1,1097 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300;400;600&family=Oswald:wght@400;500&family=Raleway:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald','Raleway',"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+hr {
+  border: 0.2px solid rgba(255, 255, 255, 0.2);
+  /* opacity: 0.2; */
+}
+
+/* Header & Navbar Style */
+#header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 1;
+}
+
+#nav-bar {
+  display: flex;
+  padding-left: 35px;
+  /* padding-right: 10px; */
+}
+
+#site-logo {
+  flex: 1;
+}
+
+#site-logo img {
+  width: 135px;
+  position: relative;
+  top: 3px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+
+#middle-block {
+  margin-right: 20px;
+}
+
+#last-block {
+  display: flex;
+}
+
+#menu-bar i {
+  font-size: 24px;
+  position: relative;
+  top: 15px;
+  color: white;
+  opacity: 0.8;
+}
+
+#nav-items-block {
+  display: flex;
+}
+
+#menu-bar {
+  display: none;
+}
+
+#sm-menu-block {
+  display: none;
+}
+
+.transparent-background-header {
+  background-color: #29292900;
+  animation-name: fade-out-nav-colour;
+  animation-duration: 1s;
+}
+
+@keyframes fade-out-nav-colour {
+  from {background-color: #292929;}
+  to {background-color: #29292900;}
+}
+
+.dark-background-header {
+  background-color: #292929;
+  color: white;
+  animation-name: fade-in-nav-colour;
+  animation-duration: 1s;
+}
+
+@keyframes fade-in-nav-colour {
+  from {background-color: #29292900;}
+  to {background-color: #292929;}
+}
+
+.nav-items-middle {
+  font-size: 11px;
+  position: relative;
+  top: 12px;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin-right: 16px;
+}
+
+.nav-items-last {
+  font-size: 11px;
+  position: relative;
+  top: 12px;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.nav-items-middle a, .nav-items-last a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-items-middle a:hover, .nav-items-last a:hover {
+  color: rgba(255, 255, 255, 0.356);
+  text-decoration: none;
+}
+
+.nav-items-last-block {
+  background-color: #29292983;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-items-last {
+  color: white;
+}
+
+/* Hero Section Styling */
+#hero-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./img/vent1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 5px;
+}
+
+#hero-content {
+  padding: 120px 110px;
+}
+
+#hero-desc {
+  font-family: 'Oswald','Raleway',"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+#hero-content img {
+  width: 550px;
+}
+
+#hero-content div {
+  display: flex;
+  margin-top: 18px;
+}
+
+#btn-play-block {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  margin-right: 28px;
+  transform: scale(1.1);
+}
+
+.scale-in {
+  animation-name: animate-scale-in;
+  animation-duration: 0.5s;
+}
+
+@keyframes animate-scale-in {
+  from {transform: scale(1.1);}
+  to {transform: scale(1);}
+}
+
+.scale-out {
+  animation-name: animate-scale-out;
+  animation-duration: 0.5s;
+}
+
+@keyframes animate-scale-out {
+  from {transform: scale(1);}
+  to {transform: scale(1.1);}
+}
+
+/* #btn-play-block:hover {
+  animation-name: animate-scale-in;
+  animation-duration: 1s;
+}
+
+@keyframes animate-scale-in {
+  from {transform: scale(1.1);}
+  to {transform: scale(1);}
+} */
+
+#btn-play {
+  color: white;
+  margin-top: 28px;
+  position: relative;
+  left: 30px;
+}
+
+#play-desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+#play-description-block {
+  width: 35%;
+}
+
+/* Signature Section */
+#signature-section {
+  height: 70vh;
+  padding: 50px 200px;
+  text-align: center;
+}
+
+#sig-content h1{
+  font-size: 40px;
+  color: #1d1c1c;
+}
+
+#sig-content p {
+  color: #707070;
+  line-height: 1.5;
+  word-spacing: 1.5px;
+}
+
+#sig-content img {
+  width: 250px;
+}
+
+/* Hashtag Section Styling */
+#hashtag-section {
+  height: 50vh;
+  background-color: #f8f8f8;
+  padding: 50px 100px;
+}
+
+#hashtag-content {
+  width: 40%;
+  text-align: center;
+}
+
+#hashtag-content h2 {
+  font-size: 40px;
+  letter-spacing: 8px;
+  margin-bottom: 0;
+}
+
+#hashtag-content small {
+  font-family: 'Oswald','Raleway',"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+#hashtag-content p {
+  line-height: 2;
+  color: #707070;
+}
+
+/* Tours Section */
+#tours-section h3 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 500;
+  padding: 18px 0;
+}
+
+#trek-nepal {
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./img/vent3.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#antelope-canyon {
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./img/vent4.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 5px;
+}
+
+#nevada {
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./img/vent5.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 5px;
+}
+
+.tour-content {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tour-content div {
+  width: 50%;
+  text-align: center;
+}
+
+.tour-content h2 {
+  font-size: 40px;
+  letter-spacing: 5px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.tour-content p {
+  margin-top: 8px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.tour-content button {
+  background: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  border: 2px solid white;
+  padding: 14px 40px;
+  cursor: pointer;
+}
+
+.btn-explore-fade-in {
+  animation-name: btn-explore-fade-in;
+  animation-duration: 0.5s;
+}
+
+@keyframes btn-explore-fade-in {
+  from {background-color: rgba(255, 255, 255, 0);}
+  to {background-color: rgba(255, 255, 255, 0.8);}
+}
+
+.btn-explore-fade-out {
+  animation-name: btn-explore-fade-out;
+  animation-duration: 0.5s;
+}
+
+@keyframes btn-explore-fade-out {
+  from {background-color: rgba(255, 255, 255, 0.8);}
+  to {background-color: rgba(255, 255, 255, 0);}
+}
+
+
+
+/* Book Tour Section */
+#book-tour-section {
+  width: 100%;
+  height: 100vh;
+}
+
+#book-tour-description {
+  width: 100%;
+  display: flex;
+}
+
+#book-img-block {
+  /* width: 100%; */
+  height: 100vh;
+  background-image: url('./img/vent2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 1;
+}
+
+#book-description-block {
+  width: 100%;
+  height: 100vh;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#book-description-block div {
+  width: 60%;
+}
+
+#book-description-block div h2 {
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: #1d1c1c;
+}
+
+#book-description-block div p {
+  font-size: 13px;
+  color: #707070;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
+#book-description-block div ul {
+  font-size: 13px;
+  color: #707070;
+  margin-left: 0;
+  padding-left: 15px;
+}
+
+#book-description-block div button {
+  background-color: #292929;
+  color: white;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 16px 60px;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+.book-tour-btn-fade-in {
+  animation-name: book-tour-btn-fade-in;
+  animation-duration: 0.7s;
+}
+
+@keyframes book-tour-btn-fade-in {
+  from {background-color: #292929;}
+  to {background-color: rgba(0, 0, 0, 0.7);}
+}
+
+.book-tour-btn-fade-out {
+  animation-name: book-tour-btn-fade-out;
+  animation-duration: 0.7s;
+}
+
+@keyframes book-tour-btn-fade-out {
+  from {background-color: rgba(0, 0, 0, 0.7);}
+  to {background-color: #292929}
+}
+
+/* Newsletter Section Styling */
+#newsletter-section {
+  width: 100%;
+  height: 90vh;
+  background-color: #91a05c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#newsletter-section img {
+  width: 500px;
+}
+
+#newsletter-section h4 {
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 80px;
+}
+
+#newsletter-section p {
+  color: #fefefe;
+  opacity: 0.5;
+  margin-top: 30px;
+}
+
+#email {
+  background: none;
+  border: 1px solid white;
+  padding: 12px 24px;
+  font-weight: 600;
+  color: white;
+  font-size: 13px;
+}
+
+#email::placeholder {
+  color: white;
+}
+
+#btn-submit {
+  background-color: white;
+  color: #91a05c;
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 12px 50px;
+  cursor: pointer;
+}
+
+/* Footer Styling */
+#footer {
+  background-color: #292929;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 80px;
+  padding-bottom: 24px;
+}
+
+#footer1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 24px;
+}
+
+#footer1 h6 {
+  margin-top: 0;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 2px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+#footer-img img {
+  width: 130px;
+}
+
+#recent-posts li p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#recent-posts li small {
+  opacity: 0.7;
+  margin-top: 0;
+}
+
+#latest-updates li {
+  font-size: 13px;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+#latest-updates li i {
+  margin-top: 3px;
+}
+
+#latest-updates li p {
+  margin-top: 0;
+  margin-left: 8px;
+}
+
+.footer1-grid ul {
+  list-style-type: none;
+  padding-left: 0;
+  color: white;
+}
+
+#footer2 {
+  display: flex;
+}
+
+#copyright {
+  flex: 1;
+}
+
+#copyright p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+#social-media i {
+  color: rgba(255, 255, 255, 0.3);
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+
+#social-media i:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#footer3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#top {
+  background: none;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: #91a05c7e;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 26px;
+  cursor: pointer;
+}
+
+#top:hover {
+  color: rgba(255, 255, 255, 0.8);
+  border: 2px, solid rgba(255, 255, 255, 0.8);
+}
+
+@media(max-width: 1024px) {
+  /* Header Style */
+  #site-logo img {
+    width: 120px;
+  }
+
+  .nav-items-middle {
+    margin-right: 2px;
+    font-size: 9.5px;
+  }
+
+  /* Hero Section */
+  #hero-content {
+    padding: 180px 50px;
+  }
+
+  /* Signature Section */
+  #signature-section {
+    padding: 50px 160px;
+  }
+
+  /* Hashtag Section */
+  #hashtag-section {
+    padding: 50px 50px;
+  }
+
+  /* Book Tours */
+  #book-tour-section {
+    height: 75vh;
+  }
+
+  #book-img-block {
+    height: 75vh;
+  }
+
+  #book-description-block {
+    align-items: flex-start;
+  }
+
+  #book-description-block div p {
+    line-height: 2.5;
+  }
+
+  #book-description-block div ul {
+    line-height: 2.5;
+  }
+
+  /* Newsletter Section Styling */
+  #newsletter-sectioin {
+    height: 70vh;
+  }
+
+  /* Footer */
+  #footer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media(max-width: 768px) {
+  /* Header */
+  #nav-bar {
+    padding: 0 18px;
+  }
+
+  #site-logo img {
+    width: 135px;
+  }
+
+  #nav-items-block {
+    display: none;
+  }
+
+  #menu-bar {
+    display: block;
+  }
+
+  /* Small Menu Styles */
+  #sm-menu-block {
+    position: fixed;
+    /* right: -307px; */
+    right: 0;
+    background-color: #2929299d;
+    width: 40%;
+    height: 80vh;
+    padding: 24px;
+    z-index: 1;
+    display: none;
+  }
+
+  #sm-middle-block {
+    padding-top: 10px;
+  }
+
+  .animate-menu-slide-in {
+    animation-name: menu-slide-in;
+    animation-duration: 1s;
+  }
+
+  @keyframes menu-slide-in {
+    from {right: -307px;}
+    to {right: 0;}
+  }
+
+  .animate-menu-slide-out {
+    animation-name: menu-slide-out;
+    animation-duration: 1s;
+  }
+
+  @keyframes menu-slide-out {
+    from {right: 0;}
+    to {right: -307px;}
+  }
+
+  .sm-nav-items-middle {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-right: 16px;
+  }
+  
+  .sm-nav-items-last {
+    font-size: 14px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  
+  .sm-nav-items-middle a, .sm-nav-items-last a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .sm-nav-items-last-block {
+    background-color: rgba(255, 255, 255, 0.527);
+    color: #292929;
+    width: 94%;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .sm-nav-items-last-block:first-of-type {
+    border-bottom: 1px solid #29292993;
+  }
+
+  /* hero-section */
+  #hero-content {
+    padding: 110px 30px;
+  }
+
+  #hero-desc {
+    margin-bottom: 24px;
+  }
+
+  #hero-content img {
+    width: 500px;
+  }
+
+  #hero-content div {
+    margin-top: 8px;
+  }
+
+  /* Signature Section */
+  #signature-section {
+    padding: 70px 80px;
+    height: 90vh;
+  }
+
+  /* Hashtag Section */
+  #hashtag-section {
+    padding: 5px 30px;
+  }
+
+  #hashtag-content p {
+    font-size: 14px;
+  }
+
+  /* Tour Section */
+  .tour-content div {
+    width: 80%;
+  }
+
+  /* Book Tour */
+  #book-img-block {
+    height: 100vh;
+    padding-bottom: 80vh;
+  }
+
+  #book-tour-section {
+    height: unset;
+  }
+
+  #book-tour-description {
+    flex-direction: column;
+  }
+
+  #book-description-block {
+    padding-bottom: 30px;
+  }
+
+  /* Newsletter Section */
+  #newsletter-section {
+    height: 80vh;
+  }
+
+  #newsletter-section img {
+    width: 600px;
+  }
+
+  #form-block {
+    width: 80%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  #email {
+    padding: 12px 10px;
+  }
+  
+  #btn-submit {
+    padding: 12px 20px;
+  }
+
+  /* Footer */
+  #footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #footer1 {
+    grid-template-columns: repeat(2, 2fr);
+    row-gap: 40px;
+  }
+}
+
+@media(max-width: 480px) {
+  /* Small Menu */
+  #sm-menu-block {
+    width: 80%;
+  }
+
+  /* Hero Section */
+  #hero-content {
+    padding: 80px 16px;
+    padding-right: 5px;
+  }
+
+  #hero-content img {
+    width: 400px;
+    margin-bottom: 18px;
+  }
+
+  #hero-content div {
+    flex-direction: column;
+  }
+
+  #hero-desc {
+    font-size: 12px;
+  }
+
+  #btn-play-block {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 18px;
+  }
+
+  #btn-play {
+    position: relative;
+    top: -7px;
+    left: 22px;
+  }
+
+  #play-description-block {
+    width: 100%;
+  }
+
+  #play-desc {
+    font-size: 13px;
+    opacity: 0.8;
+  }
+
+  /* Signature Section */
+  #signature-section {
+    padding: 50px 7px;
+    height: 95vh;
+  }
+
+  #sig-content h1 {
+    font-size: 30px;
+  }
+
+  #sig-content p {
+    font-size: 13px;
+    line-height: 2;
+    margin-bottom: 50px;
+  }
+
+  #sig-content img {
+    font-size: 150px;
+    padding-bottom: 24px;
+  }
+
+  /* Hashtag Section */
+  #hashtag-section {
+    height: 60vh;
+    padding: 50px 5px;
+  }
+
+  #hashtag-content {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #hashtag-content h2 {
+    margin-bottom: 14px;
+  }
+
+  #hashtag-content p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 28px;
+  }
+
+  /* Tour Section */
+  .tour-content div{
+    width: 90%;
+  }
+
+  .tour-content div p {
+    font-size: 13px;
+  }
+
+  /* Book Tour */
+  #book-description-block {
+    justify-content: flex-start;
+    padding-left: 16px;
+  }
+
+  #book-description-block div {
+    width: 100%;
+  }
+
+  #book-description-block div h2 {
+    font-size: 24px;
+  }
+
+  /* Newsletter Section */
+  #newsletter-section img {
+    width: 400px;
+  }
+
+  #newsletter-section p {
+    font-size: 13px;
+  }
+
+  #form-block {
+    width: 95%;
+    display: inline-block;
+  }
+
+  #email {
+    margin-bottom: 8px;
+  }
+
+  #email, #btn-submit {
+    width: 100%;
+  }
+
+  /* Footer */
+  #footer {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  #footer1 {
+    grid-template-columns: repeat(1, 4fr);
+  }
+
+  #footer2 {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 11px;
+  }
+
+  #social-media i {
+    font-size: 14px;
+  }
+
+  #footer3 {
+    margin-top: 16px;
+  }
+}
+
+@media(max-width: 375px) {
+  /* Hero Section */
+  #hero-content img{
+    width: 350px;
+  }
+
+  /* Signture Section */
+  #signature-section {
+    margin-bottom: 70px;
+  }
+
+  #sig-content p {
+    margin-bottom: 40px;
+  }
+
+  /* Tour Section */
+  .tour-content div {
+    width: 98%;
+  }
+
+  .tour-content div h2 {
+    font-size: 30px;
+  }
+
+  .tour-content div p {
+    font-size: 12px;
+  }
+
+  /* Book Tour */
+  #book-description-block div h2 {
+    font-size: 18px;
+  }
+
+  /* Newsletter Section */
+  #newsletter-section img {
+    width: 300px;
+  }
+
+  #newsletter-section h4 {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+}
+
+@media(max-width: 320px) {
+  #hero-content {
+    padding-top: 100px;
+  }
+
+  #hero-content img{
+    width: 300px;
+  }
+
+  /* Signature Section */
+  #sig-content h1 {
+    font-size: 28px;
+  }
+
+  #sig-content p {
+    line-height: 1.7;
+  }
+
+  /* Hashtag Section */
+  #hashtag-content h2 {
+    font-size: 30px;
+  }
+
+  #book-description-block div h2 {
+    font-size: 16px;
+  }
+}
