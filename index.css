@@ -42,7 +42,7 @@ hr {
   flex: 1;
 }
 
-#site-logo img {
+#logo {
   width: 135px;
   position: relative;
   top: 3px;
@@ -621,7 +621,7 @@ hr {
 
 @media(max-width: 1024px) {
   /* Header Style */
-  #site-logo img {
+  #logo {
     width: 120px;
   }
 
@@ -684,7 +684,7 @@ hr {
     padding: 0 18px;
   }
 
-  #site-logo img {
+  #logo {
     width: 135px;
   }
 
